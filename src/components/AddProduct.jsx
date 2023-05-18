@@ -42,11 +42,11 @@ const AddProduct = () => {
             </div>
             <div className=" md:flex md:justify-between my-4 ">
               <label htmlFor="Product">
-                Category <span className="text-red-600 font-bold">*</span>{" "}
+                Category <span className="text-red-600 font-bold">*</span>
               </label>
               <Listbox value={selectedCategory} onChange={setSelectedCaegory}>
-                <div className="relative mt-1">
-                  <Listbox.Button className="relative w-full cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left border focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm focus:outline-none focus:border-secondary focus:ring-orange-600">
+                <div className="relative mt-1 md:w-[70%] w-full mr-8 ">
+                  <Listbox.Button className="relative w-full rounded-lg bg-white py-2 pl-3 pr-10 text-left border sm:text-sm focus:outline-none focus:border-secondary focus:ring-orange-600">
                     <span className="block truncate">
                       {selectedCategory.name}
                     </span>
@@ -105,7 +105,7 @@ const AddProduct = () => {
             <div className=" md:flex md:justify-between my-4 ">
               <label htmlFor="Product">Brand</label>
               <Listbox value={selecteds} onChange={setSelecteds}>
-                <div className="relative mt-1">
+                <div className="relative mt-1 md:w-[70%] w-full mr-8 ">
                   <Listbox.Button className="relative w-full cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left border focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm focus:outline-none focus:border-secondary focus:ring-orange-600">
                     <span className="block truncate">{selecteds.name}</span>
                     <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
@@ -195,6 +195,7 @@ const AddProduct = () => {
                 className="w-full md:w-[70%] border mr-8 rounded p-2 focus:outline-none focus:border-secondary focus:ring-orange-600"
               />
             </div>
+
             <input
               className="bg-secondary px-3 py-3 rounded-md text-white"
               type="submit"
