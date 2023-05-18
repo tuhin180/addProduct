@@ -2,6 +2,7 @@ import ImageSection from "./Form/ImageSection";
 import GeneralSection from "./Form/GeneralSection";
 import ProductVideos from "./Form/ProductVideos";
 import ProductVariation from "./Form/ProductVariation";
+import ProductPriceStock from "./Form/ProductPriceStock";
 
 const AddProduct = () => {
   return (
@@ -21,6 +22,9 @@ const AddProduct = () => {
 
               {/* product variation  */}
               <ProductVariation />
+
+              {/* product price and stock  */}
+              <ProductPriceStock />
               <input
                 className="bg-secondary px-3 py-3 rounded-md text-white"
                 type="submit"
