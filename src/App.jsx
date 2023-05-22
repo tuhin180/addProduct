@@ -5,6 +5,7 @@ function App() {
     <>
       <div>Custom forked testing</div>
       <AddProduct />
+    BLA BLA BLA 
     </>
   );
 }
